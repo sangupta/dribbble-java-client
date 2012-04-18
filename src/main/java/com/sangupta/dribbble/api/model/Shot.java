@@ -27,7 +27,7 @@ package com.sangupta.dribbble.api.model;
  * @author sangupta
  *
  */
-public class Shot {
+public class Shot implements Comparable<Shot> {
 	
 	private long id;
 	
@@ -59,6 +59,50 @@ public class Shot {
 	
 	private Player player;
 	
+	/**
+	 * @see java.lang.Object#equals(java.lang.Object)
+	 */
+	@Override
+	public boolean equals(Object obj) {
+		if(obj == null) {
+			return false;
+		}
+		
+		if(obj instanceof Shot) {
+			Shot shot = (Shot) obj;
+			return this.id == shot.id;
+		}
+		
+		return false;
+	}
+	
+	/**
+	 * @see java.lang.Object#hashCode()
+	 */
+	@Override
+	public int hashCode() {
+		return Long.valueOf(this.id).hashCode();
+	}
+	
+	/**
+	 * @see java.lang.Object#toString()
+	 */
+	@Override
+	public String toString() {
+		return "Dribbble Shot ID: " + this.id;
+	}
+	
+	/**
+	 * @see java.lang.Comparable#compareTo(java.lang.Object)
+	 */
+	public int compareTo(Shot o) {
+		if(o == null) {
+			return -1;
+		}
+		
+		return Long.valueOf(this.id).compareTo(o.id);
+	}
+
 	// Usual accessors follow
 
 	/**

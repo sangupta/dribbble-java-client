@@ -22,10 +22,12 @@
 package com.sangupta.dribbble.api.model;
 
 /**
+ * Holds details of one comment from Dribbble.com
+ * 
  * @author sangupta
  *
  */
-public class Comment {
+public class Comment implements Comparable<Comment> {
 	
 	private long id;
 	
@@ -37,6 +39,50 @@ public class Comment {
 	
 	private Player player;
 	
+	/**
+	 * @see java.lang.Object#equals(java.lang.Object)
+	 */
+	@Override
+	public boolean equals(Object obj) {
+		if(obj == null) {
+			return false;
+		}
+		
+		if(obj instanceof Comment) {
+			Comment other = (Comment) obj;
+			return this.id == other.id;
+		}
+		
+		return false; 
+	}
+	
+	/**
+	 * @see java.lang.Object#hashCode()
+	 */
+	@Override
+	public int hashCode() {
+		return Long.valueOf(id).hashCode();
+	}
+	
+	/**
+	 * @see java.lang.Object#toString()
+	 */
+	@Override
+	public String toString() {
+		return "Dribble Comment ID: " + this.id;
+	}
+	
+	/**
+	 * @see java.lang.Comparable#compareTo(java.lang.Object)
+	 */
+	public int compareTo(Comment o) {
+		if(o == null) {
+			return -1;
+		}
+		
+		return Long.valueOf(id).compareTo(Long.valueOf(o.id));
+	}
+
 	// Usual accessors follow
 
 	/**

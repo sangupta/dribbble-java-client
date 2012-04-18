@@ -112,6 +112,17 @@ public class DribbbleClient {
 	 * 
 	 * @param shotID
 	 * @param page
+	 * @return
+	 */
+	public ShotList getShotRebounds(long shotID, int page) {
+		return getShotRebounds(shotID, page, DEFAULT_PER_PAGE);
+	}
+	
+	/**
+	 * Returns the set of rebounds (shots in response to a shot) for the shot specified by :id.
+	 * 
+	 * @param shotID
+	 * @param page
 	 * @param perPage
 	 * @return
 	 */
@@ -146,6 +157,17 @@ public class DribbbleClient {
 	 * 
 	 * @param shotID
 	 * @param page
+	 * @return
+	 */
+	public CommentList getShotComments(long shotID, int page) {
+		return getShotComments(shotID, page, DEFAULT_PER_PAGE);
+	}
+	
+	/**
+	 * Returns the set of comments for the shot specified by :id.
+	 * 
+	 * @param shotID
+	 * @param page
 	 * @param perPage
 	 * @return
 	 */
@@ -173,6 +195,17 @@ public class DribbbleClient {
 	 */
 	public ShotList getShotsList(ShotListType shotListType) {
 		return getShotsList(shotListType, DEFAULT_PAGE, DEFAULT_PER_PAGE);
+	}
+	
+	/**
+	 * Returns the specified list of shots where :list has one of the following values: debuts, everyone, popular
+	 * 
+	 * @param type
+	 * @param page
+	 * @return
+	 */
+	public ShotList getShotsList(ShotListType shotListType, int page) {
+		return getShotsList(shotListType, page, DEFAULT_PER_PAGE);
 	}
 	
 	/**
@@ -214,6 +247,17 @@ public class DribbbleClient {
 	 * 
 	 * @param playerID
 	 * @param page
+	 * @return
+	 */
+	public ShotList getShotsForPlayer(long playerID, int page) {
+		return getShotsForPlayer(playerID, page, DEFAULT_PER_PAGE);
+	}
+	
+	/**
+	 * Returns the most recent shots for the player specified by :id.
+	 * 
+	 * @param playerID
+	 * @param page
 	 * @param perPage
 	 * @return
 	 */
@@ -241,6 +285,17 @@ public class DribbbleClient {
 	 */
 	public ShotList getShotsForPlayer(String playerUsername) {
 		return getShotsForPlayer(playerUsername, DEFAULT_PAGE, DEFAULT_PER_PAGE);
+	}
+	
+	/**
+	 * Returns the most recent shots for the player specified by :id.
+	 * 
+	 * @param playerUsername
+	 * @param page
+	 * @return
+	 */
+	public ShotList getShotsForPlayer(String playerUsername, int page) {
+		return getShotsForPlayer(playerUsername, page, DEFAULT_PER_PAGE);
 	}
 	
 	/**
@@ -282,6 +337,17 @@ public class DribbbleClient {
 	 * 
 	 * @param playerID
 	 * @param page
+	 * @return
+	 */
+	public ShotList getShotsOfPlayerFollowed(long playerID, int page) {
+		return getShotsOfPlayerFollowed(playerID, page, DEFAULT_PER_PAGE);
+	}
+	
+	/**
+	 * Returns the most recent shots published by those the player specified by :id is following.
+	 * 
+	 * @param playerID
+	 * @param page
 	 * @param perPage
 	 * @return
 	 */
@@ -309,6 +375,17 @@ public class DribbbleClient {
 	 */
 	public ShotList getShotsOfPlayerFollowed(String playerUsername) {
 		return getShotsOfPlayerFollowed(playerUsername, DEFAULT_PAGE, DEFAULT_PER_PAGE);
+	}
+	
+	/**
+	 * Returns the most recent shots published by those the player specified by :id is following.
+	 * 
+	 * @param playerID
+	 * @param page
+	 * @return
+	 */
+	public ShotList getShotsOfPlayerFollowed(String playerUsername, int page) {
+		return getShotsOfPlayerFollowed(playerUsername, page, DEFAULT_PER_PAGE);
 	}
 	
 	/**
@@ -350,6 +427,17 @@ public class DribbbleClient {
 	 * 
 	 * @param playerID
 	 * @param page
+	 * @return
+	 */
+	public ShotList getPlayerLikedShots(long playerID, int page) {
+		return getPlayerLikedShots(playerID, page, DEFAULT_PER_PAGE);
+	}
+	
+	/**
+	 * Returns shots liked by the player specified by :id.
+	 * 
+	 * @param playerID
+	 * @param page
 	 * @param perPage
 	 * @return
 	 */
@@ -377,6 +465,17 @@ public class DribbbleClient {
 	 */
 	public ShotList getPlayerLikedShots(String playerUsername) {
 		return getPlayerLikedShots(playerUsername, DEFAULT_PAGE, DEFAULT_PER_PAGE);
+	}
+	
+	/**
+	 * Returns shots liked by the player specified by :id.
+	 * 
+	 * @param playerID
+	 * @param page
+	 * @return
+	 */
+	public ShotList getPlayerLikedShots(String playerUsername, int page) {
+		return getPlayerLikedShots(playerUsername, page, DEFAULT_PER_PAGE);
 	}
 	
 	/**
@@ -446,6 +545,17 @@ public class DribbbleClient {
 	 * 
 	 * @param playerID
 	 * @param page
+	 * @return
+	 */
+	public PlayerList getPlayerFollowers(long playerID, int page) {
+		return getPlayerFollowers(playerID, page, DEFAULT_PER_PAGE);
+	}
+	
+	/**
+	 * Returns the list of followers for a player specified by :id.
+	 * 
+	 * @param playerID
+	 * @param page
 	 * @param perPage
 	 * @return
 	 */
@@ -473,6 +583,17 @@ public class DribbbleClient {
 	 */
 	public PlayerList getPlayerFollowers(String playerUsername) {
 		return getPlayerFollowers(playerUsername, DEFAULT_PAGE, DEFAULT_PER_PAGE);
+	}
+	
+	/**
+	 * Returns the list of followers for a player specified by :id.
+	 * 
+	 * @param playerUsername
+	 * @param page
+	 * @return
+	 */
+	public PlayerList getPlayerFollowers(String playerUsername, int page) {
+		return getPlayerFollowers(playerUsername, page, DEFAULT_PER_PAGE);
 	}
 	
 	/**
@@ -514,6 +635,17 @@ public class DribbbleClient {
 	 * 
 	 * @param playerID
 	 * @param page
+	 * @return
+	 */
+	public PlayerList getPlayerFollowed(long playerID, int page) {
+		return getPlayerFollowed(playerID, page, DEFAULT_PER_PAGE);
+	}
+	
+	/**
+	 * Returns the list of players followed by the player specified by :id.
+	 * 
+	 * @param playerID
+	 * @param page
 	 * @param perPage
 	 * @return
 	 */
@@ -541,6 +673,17 @@ public class DribbbleClient {
 	 */
 	public PlayerList getPlayerFollowed(String playerUsername) {
 		return getPlayerFollowed(playerUsername, DEFAULT_PAGE, DEFAULT_PER_PAGE);
+	}
+	
+	/**
+	 * Returns the list of players followed by the player specified by :id.
+	 * 
+	 * @param playerUsername
+	 * @param page
+	 * @return
+	 */
+	public PlayerList getPlayerFollowed(String playerUsername, int page) {
+		return getPlayerFollowed(playerUsername, page, DEFAULT_PER_PAGE);
 	}
 
 	/**
@@ -582,6 +725,17 @@ public class DribbbleClient {
 	 * 
 	 * @param playerID
 	 * @param page
+	 * @return
+	 */
+	public PlayerList getPlayerDraftees(long playerID, int page) {
+		return getPlayerDraftees(playerID, page, DEFAULT_PER_PAGE);
+	}
+	
+	/**
+	 * Returns the list of players drafted by the player specified by :id.
+	 * 
+	 * @param playerID
+	 * @param page
 	 * @param perPage
 	 * @return
 	 */
@@ -609,6 +763,17 @@ public class DribbbleClient {
 	 */
 	public PlayerList getPlayerDraftees(String playerUsername) {
 		return getPlayerDraftees(playerUsername, DEFAULT_PAGE, DEFAULT_PER_PAGE);
+	}
+	
+	/**
+	 * Returns the list of players drafted by the player specified by :id.
+	 * 
+	 * @param playerUsername
+	 * @param page
+	 * @return
+	 */
+	public PlayerList getPlayerDraftees(String playerUsername, int page) {
+		return getPlayerDraftees(playerUsername, page, DEFAULT_PER_PAGE);
 	}
 	
 	/**

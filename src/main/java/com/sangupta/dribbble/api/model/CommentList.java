@@ -24,6 +24,8 @@ package com.sangupta.dribbble.api.model;
 import java.util.List;
 
 /**
+ * Holds details of one page of comments from Dribbble.com
+ * 
  * @author sangupta
  *
  */

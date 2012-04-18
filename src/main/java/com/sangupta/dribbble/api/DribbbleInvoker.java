@@ -35,6 +35,9 @@ import org.apache.http.impl.conn.tsccm.ThreadSafeClientConnManager;
 import org.apache.http.util.EntityUtils;
 
 /**
+ * Utility class to invoke the end point at Dribbble.com and
+ * return the HTTP response back as String.
+ *  
  * @author sangupta
  *
  */
@@ -155,8 +158,8 @@ public class DribbbleInvoker {
 	 * @param url
 	 * @return
 	 */
-	private static String hit(String url) {
-		HttpGet httpGet = new HttpGet();
+	private static String hit(final String url) {
+		HttpGet httpGet = new HttpGet(url);
 		try {
 			HttpResponse httpResponse = httpClient.execute(httpGet);
 			final HttpEntity entity = httpResponse.getEntity();

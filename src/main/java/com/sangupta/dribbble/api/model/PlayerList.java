@@ -24,6 +24,8 @@ package com.sangupta.dribbble.api.model;
 import java.util.List;
 
 /**
+ * Holds details of one page of player list from Dribbble.com
+ * 
  * @author sangupta
  *
  */

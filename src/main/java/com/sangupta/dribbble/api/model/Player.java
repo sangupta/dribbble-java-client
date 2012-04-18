@@ -27,7 +27,7 @@ package com.sangupta.dribbble.api.model;
  * @author sangupta
  *
  */
-public class Player {
+public class Player implements Comparable<Player> {
 	
 	private long id;
 	
@@ -66,6 +66,50 @@ public class Player {
 	private int reboundsReceivedCount;
 	
 	private String createdAt;
+	
+	/**
+	 * @see java.lang.Object#equals(java.lang.Object)
+	 */
+	@Override
+	public boolean equals(Object obj) {
+		if(obj == null) {
+			return false;
+		}
+		
+		if(obj instanceof Player) {
+			Player other = (Player) obj;
+			return this.id == other.id;
+		}
+		
+		return false;
+	}
+	
+	/**
+	 * @see java.lang.Object#hashCode()
+	 */
+	@Override
+	public int hashCode() {
+		return Long.valueOf(this.id).hashCode();
+	}
+	
+	/**
+	 * @see java.lang.Object#toString()
+	 */
+	@Override
+	public String toString() {
+		return "Dribbble Player: " + this.username;
+	}
+	
+	/**
+	 * @see java.lang.Comparable#compareTo(java.lang.Object)
+	 */
+	public int compareTo(Player o) {
+		if(o == null) {
+			return -1;
+		}
+		
+		return Long.valueOf(this.id).compareTo(Long.valueOf(o.id));
+	}
 	
 	// Usual accessors follow
 
@@ -334,5 +378,5 @@ public class Player {
 	public void setCreatedAt(String createdAt) {
 		this.createdAt = createdAt;
 	}
-	
+
 }
