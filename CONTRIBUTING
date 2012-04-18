@@ -1,0 +1,40 @@
+dribbble-java-client project is hosted on GitHub at:
+https://github.com/sangupta/dribbble-java-client
+
+If you'd like to help out with Dribbble Java Client, here are a couple 
+of guidelines you should follow:
+
+* Follow all standard coding style guidelines, especially:
+  - Space, not tabs: Use 4 of them
+  - Attribute names and variables should be named accordingly 
+    and not use of the form 'x', 'y' etc unless they are 
+	spacial coordinates.
+	
+* Develop on your own fork, then send me a pull request when
+  you're ready for a review and merge
+  
+* If you'd prefer not to fork, you may open an issue and post
+  code via a Gist or a blog entry for which the URL is provided
+  in the issue.
+  
+  For a list of all open issues, refer:
+  https://github.com/sangupta/dribbble-java-client/issues
+  
+* You may also contribute by reviewing the current code and
+  posting your observations on the GitHub site.
+  
+* Areas where you may contribute:
+  - Use the project for your own good and let me know about 
+    it, post the word in the Wiki page.
+  - Review existing code
+  - Reporting bugs you encounter while its use
+  - Requesting features that you would like to see in the project
+  - Add some documentation to the code
+  - Add some documentation to the Wiki or usage guides
+  - Most importantly, in case you dislike the project, please please
+    do let me know how the project can improve that you may start
+	liking it.
+
+~ Sandeep Gupta
+https://git.io/sangupta
+https://twitter.com/sangupta
