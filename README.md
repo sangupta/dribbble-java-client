@@ -2,13 +2,13 @@ dribbble-java-client
 ====================
 
 dribbble-java-client is a strongly typed Java library for accessing http://dribbble.com API. The 
-library provides support for rate limiting requests. All objects implement the necessary `equals`
-and `hashcode` methods for use across various collections. Also, implemented is the `Comparable` 
-interface for comparisons and sorting.
+library provides support for rate limiting requests. All objects implement the necessary `equals`,
+`hashcode` and `toString` methods for easier usage. Also, implemented is the `Comparable` 
+interface for comparison and sorting.
 
-Also exposed is a convenience class called `DribbbleInvoker` that may be used to add more APIs (should 
-they get added in future and this library looses track). The invoker is rate-limit safe.
- 
+The library also exposes a convenience class called `DribbbleInvoker` that may be used to add more 
+APIs (should they get added in future and this library looses track). The invoker is rate-limit safe.
+
 Usage
 -----
 
