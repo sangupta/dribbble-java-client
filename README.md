@@ -126,17 +126,13 @@ License
 	
 Copyright (c) 2012, Sandeep Gupta
 
-For more details on the project refer to link,
-http://www.sangupta.com/projects/dribbble-java-client
-
 The project uses various other libraries that are subject to their
 own license terms. See the distribution libraries or the project
 documentation for more details.
 
 The entire source is licensed under the Apache License, Version 2.0 
-(the "License"); you may not use this file except in compliance with
-the LICENSE as included in the distribution. You may obtain a copy of
-the License at
+(the "License"); you may not use this work except in compliance with
+the LICENSE. You may obtain a copy of the License at
 
 	http://www.apache.org/licenses/LICENSE-2.0
 
