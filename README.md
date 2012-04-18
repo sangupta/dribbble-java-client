@@ -86,7 +86,9 @@ If you wish to prevent the code from throwing the `DribbbleApiRateLimitException
 creating the client.
 
 ```java
+
 DribbbleClient client = new DribbbleClient(false);
+
 ```
 
 Any invocations on this client, will not throw the error, but return a `null` back as the result to the API query.
@@ -96,32 +98,32 @@ Dependencies
 
 The library depends on the following:
 
-# Google GSON library for working with GSON data
-# Apache HttpClient library for accessing the internet
+* Google GSON library for working with GSON data
+* Apache HttpClient library for accessing the internet
 
 The library uses `java.util.logging.Logger` for logging exceptions while accessing the APIs.
 
 License
 -------
 	
-	Copyright (c) 2012, Sandeep Gupta
-	
-	For more details on the project refer to link,
-	http://www.sangupta.com/projects/dribbble-java-client
-	
-	The project uses various other libraries that are subject to their
-	own license terms. See the distribution libraries or the project
-	documentation for more details.
+Copyright (c) 2012, Sandeep Gupta
 
-	The entire source is licensed under the Apache License, Version 2.0 
-	(the "License"); you may not use this file except in compliance with
-	the LICENSE as included in the distribution. You may obtain a copy of
-	the License at
+For more details on the project refer to link,
+http://www.sangupta.com/projects/dribbble-java-client
 
-		http://www.apache.org/licenses/LICENSE-2.0
+The project uses various other libraries that are subject to their
+own license terms. See the distribution libraries or the project
+documentation for more details.
 
-	Unless required by applicable law or agreed to in writing, software
-	distributed under the License is distributed on an "AS IS" BASIS,
-	WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
-	See the License for the specific language governing permissions and
-	limitations under the License.
+The entire source is licensed under the Apache License, Version 2.0 
+(the "License"); you may not use this file except in compliance with
+the LICENSE as included in the distribution. You may obtain a copy of
+the License at
+
+	http://www.apache.org/licenses/LICENSE-2.0
+
+Unless required by applicable law or agreed to in writing, software
+distributed under the License is distributed on an "AS IS" BASIS,
+WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+See the License for the specific language governing permissions and
+limitations under the License.
