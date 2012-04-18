@@ -103,6 +103,24 @@ The library depends on the following:
 
 The library uses `java.util.logging.Logger` for logging exceptions while accessing the APIs.
 
+Versioning
+----------
+
+For transparency and insight into our release cycle, and for striving to maintain backward compatibility, 
+dribbble-java-client will be maintained under the Semantic Versioning guidelines as much as possible.
+
+Releases will be numbered with the follow format:
+
+`<major>.<minor>.<patch>`
+
+And constructed with the following guidelines:
+
+* Breaking backward compatibility bumps the major
+* New additions without breaking backward compatibility bumps the minor
+* Bug fixes and misc changes bump the patch
+
+For more information on SemVer, please visit http://semver.org/.
+
 License
 -------
 	
