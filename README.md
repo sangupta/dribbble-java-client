@@ -96,7 +96,9 @@ Any invocations on this client, will not throw the error, but return a `null` ba
 Dependencies
 ------------
 
-The library depends on the following:
+The library is built and compiled using `Java 1.6`. The library has been tested using both `Java 1.6` and `Java 1.7`.
+
+The library also depends on the following external libraries:
 
 * Google GSON library for working with GSON data
 * Apache HttpClient library for accessing the internet
