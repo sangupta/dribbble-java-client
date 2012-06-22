@@ -10,7 +10,7 @@
 
 	<groupId>com.sangupta</groupId>
 	<artifactId>dribbble-java-client</artifactId>
-	<version>1.0.0</version>
+	<version>1.0.1-SNAPSHOT</version>
 	<packaging>jar</packaging>
 
 	<name>dribbble-java-client</name>
