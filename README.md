@@ -93,6 +93,21 @@ DribbbleClient client = new DribbbleClient(false);
 
 Any invocations on this client, will not throw the error, but return a `null` back as the result to the API query.
 
+Downloads
+---------
+
+You can download the `JAR` from the [Downloads](https://github.com/sangupta/dribbble-java-client/downloads) page.
+
+Alternatively, you may download the builds from `Maven Central` repository using:
+
+```xml
+<dependency>
+    <groupId>com.sangupta</groupId>
+    <artifactId>dribbble-java-client</artifactId>
+    <version>1.0.0</version>
+</dependency>
+```
+
 Dependencies
 ------------
 
