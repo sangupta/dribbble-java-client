@@ -120,6 +120,19 @@ The library also depends on the following external libraries:
 
 The library uses `java.util.logging.Logger` for logging exceptions while accessing the APIs.
 
+Continuous Integration
+----------------------
+The library is continuously integrated and unit tested using the *Travis CI system.
+
+Current status of branch `MASTER`: [![Build Status](https://secure.travis-ci.org/sangupta/dribbble-java-client.png?branch=master)](http://travis-ci.org/sangupta/dribbble-java-client)
+
+The library is tested against
+
+* Oracle JDK 7
+* Oracle JDK 6
+* Open JDK 7
+* Open JDK 6
+
 Versioning
 ----------
 
